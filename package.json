@@ -1,6 +1,10 @@
 {
   "name": "kinot-server",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.5.0"
+  },
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
