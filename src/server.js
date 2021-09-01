@@ -4,7 +4,10 @@ const cors = require("cors");
 require("./db");
 const filmRouter = require("../routers/films");
 
-const port = 8000;
+const port = process.env.PORT;
+if (port == null || port == "") {
+  port = 6000;
+}
 const app = express();
 
 app.use(cors());
